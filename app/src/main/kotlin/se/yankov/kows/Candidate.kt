@@ -39,7 +39,7 @@ class Candidate(val digits: IntArray) {
                         Left("The input must be integer with 4 digits".toError())
                     }
                 }
-            } catch (nfe: NumberFormatException) {
+            } catch (ex: Exception) {
                 Left("The input must be integer".toError())
             }
 
